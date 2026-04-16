@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-// Carichiamo il file
+// 1. CARICAMENTO DATI
 const rawData = fs.readFileSync('channels.json');
 const data = JSON.parse(rawData);
 
@@ -9,33 +9,37 @@ let m3uContent = "#EXTM3U\n";
 data.channels.forEach(channel => {
     let streamUrl = "";
 
-    // 1. FILTRO QUALITÀ: Cerchiamo l'URL migliore partendo dal più compatibile
-    if (channel.nativeHLS && channel.nativeHLS.url) {
-        streamUrl = channel.nativeHLS.url;
-    } else if (channel.geoblock && channel.geoblock.url) {
-        streamUrl = channel.geoblock.url;
-    } else if (channel.url && channel.url.startsWith('http')) {
-        // Escludiamo pagine web (iframe/popup) che il decoder non apre
-        if (channel.type !== 'iframe' && channel.type !== 'popup') {
-            streamUrl = channel.url;
-        }
+    // 2. LOGICA TRUCCO MEDIASET (Link diretti Akamai)
+    const mediasetIds = {
+        "Canale 5": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8",
+        "Italia 1": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8",
+        "Rete 4": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
+        "20 Mediaset": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8"
+    };
+
+    if (mediasetIds[channel.name]) {
+        streamUrl = mediasetIds[channel.name];
+    } else {
+        // Logica standard per gli altri canali
+        if (channel.nativeHLS) streamUrl = channel.nativeHLS.url;
+        else if (channel.geoblock && channel.geoblock.url) streamUrl = channel.geoblock.url;
+        else if (channel.url && channel.url.startsWith('http') && channel.type !== 'iframe') streamUrl = channel.url;
     }
 
-    // Se l'URL non è valido o è un comando strano (zappr://), lo scartiamo
+    // Salta se l'URL non è valido
     if (!streamUrl || !streamUrl.startsWith('http')) return;
 
-    // 2. TRUCCO IDENTITÀ: Ci fingiamo un'Apple TV per sbloccare Mediaset e Rai
-    const userAgent = "AppleCoreMedia/1.0.0.19E258 (Apple TV; U; CPU OS 15_4 like Mac OS X; it_it)";
-    
-    // Costruiamo i dati del canale
+    // 3. DATI CANALE E HEADERS
+    const ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
+    const ref = "https://www.mediasetinfinity.mediaset.it/";
     const epgId = (channel.epg && channel.epg.id) ? channel.epg.id : "";
-    const logo = channel.logo ? channel.logo : "";
 
-    // Scriviamo nel formato M3U
-    m3uContent += `#EXTINF:-1 tvg-id="${epgId}" tvg-logo="${logo}",${channel.name}\n`;
-    m3uContent += `${streamUrl}|User-Agent=${encodeURIComponent(userAgent)}\n`;
+    m3uContent += `#EXTINF:-1 tvg-id="${epgId}" tvg-logo="${channel.logo || ""}",${channel.name}\n`;
+    
+    // Formattazione speciale per Mediaset (URL | User-Agent e Referer)
+    m3uContent += `${streamUrl}|User-Agent=${encodeURIComponent(ua)}&Referer=${encodeURIComponent(ref)}\n`;
 });
 
-// Salvataggio pulito
+// 4. SALVATAGGIO
 fs.writeFileSync('lista.m3u', m3uContent);
-console.log("🔥 Lista filtrata e ottimizzata creata con successo!");
+console.log("✅ Lista aggiornata con i link Mediaset diretti!");
