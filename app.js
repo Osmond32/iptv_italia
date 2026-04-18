@@ -1,38 +1,29 @@
-const fs = require('fs');
-
-// 1. Caricamento dati
-const rawData = fs.readFileSync('channels.json');
-const data = JSON.parse(rawData);
-
-let m3uContent = "#EXTM3U\n";
-
 data.channels.forEach(channel => {
     let streamUrl = "";
 
-    // Priorità: nativeHLS > geoblock.url > url standard
-    if (channel.nativeHLS && channel.nativeHLS.url) {
+    // TRUCCO: Usiamo flussi diretti alternativi per i canali principali che ti servono
+    const backupLinks = {
+        "Rai 1": "https://stmv.bolls.tv/rai1/playlist.m3u8",
+        "Rai 2": "https://stmv.bolls.tv/rai2/playlist.m3u8",
+        "Rai 3": "https://stmv.bolls.tv/rai3/playlist.m3u8",
+        "Rete 4": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
+        "Canale 5": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8",
+        "Italia 1": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8"
+    };
+
+    if (backupLinks[channel.name]) {
+        streamUrl = backupLinks[channel.name];
+    } else if (channel.nativeHLS) {
         streamUrl = channel.nativeHLS.url;
-    } else if (channel.geoblock && channel.geoblock.url) {
-        streamUrl = channel.geoblock.url;
     } else {
         streamUrl = channel.url;
     }
 
-    // FILTRO DI SICUREZZA:
-    // Saltiamo i link che non sono URL internet (http)
-    // Saltiamo i link che portano a pagine web (iframe/popup)
-    if (!streamUrl || !streamUrl.startsWith('http') || channel.type === 'iframe' || channel.type === 'popup') {
-        return;
-    }
+    if (!streamUrl || !streamUrl.startsWith('http') || channel.type === 'iframe') return;
 
     const epgId = (channel.epg && channel.epg.id) ? channel.epg.id : "";
-    const logo = channel.logo || "";
-
-    // Formato M3U base (il più compatibile in assoluto)
-    m3uContent += `#EXTINF:-1 tvg-id="${epgId}" tvg-logo="${logo}",${channel.name}\n`;
+    
+    // Pulizia totale: niente pipe, niente User-Agent, solo link puro per massima compatibilità
+    m3uContent += `#EXTINF:-1 tvg-id="${epgId}" tvg-logo="${channel.logo || ""}",${channel.name}\n`;
     m3uContent += `${streamUrl}\n`;
 });
-
-// Salvataggio
-fs.writeFileSync('lista.m3u', m3uContent);
-console.log("✅ Lista 'pulita' generata in lista.m3u");
