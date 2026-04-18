@@ -1,0 +1,21 @@
+{
+  "name": "iptv-converter",
+  "version": "1.0.0",
+  "description": "dedicato agli italiani che vivino all'estero ma che hanno nostalgia della tv italiana. \r ho parametrato un link da inserire nel vostro decoder iptv e poter vedere le principali tv italiane totalmente nella legalità.\r il link da inserire nel vostro decoder è il seguente: https://osmond32.github.io/iptv_italia/lista.m3u",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osmond32/iptv_italia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Osmond32/iptv_italia/issues"
+  },
+  "homepage": "https://github.com/Osmond32/iptv_italia#readme"
+}
