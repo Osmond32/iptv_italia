@@ -2,45 +2,29 @@
 #EXTINF:-1 tvg-id="237" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/la7.png",LA7
 https://d1chghleocc9sm.cloudfront.net/Live.m3u8
 #EXTINF:-1 tvg-id="266" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/tv8.png",TV8
-https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09318/stb-dash-fhd-avc/SV09318.mpd
+https://skylive-lh.akamaihd.net/i/tv8_1@404090/master.m3u8
 #EXTINF:-1 tvg-id="118" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/nove.png",NOVE
-https://api.zappr.stream/nove.mpd
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S81643194/master.m3u8
 #EXTINF:-1 tvg-id="96" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/cielo.png",Cielo
-https://wp9-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09711/stb-dash-fhd-avc/SV09711.mpd
+https://skylive-lh.akamaihd.net/i/cielo_1@404091/master.m3u8
 #EXTINF:-1 tvg-id="633" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/tv2000.png",TV2000
 https://hls.live2.meride.tv/hls/live/2028947/pu934tjb/playlist.m3u8
-#EXTINF:-1 tvg-id="239" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/la7cinema.png",LA7 Cinema
-https://d15umi5iaezxgx.cloudfront.net/HBBTV/LA7D/DASH/Live.mpd
 #EXTINF:-1 tvg-id="346" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/realtime.png",Real Time
-https://api.zappr.stream/realtime.mpd
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S34263124/master.m3u8
 #EXTINF:-1 tvg-id="130" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/qvc.png",QVC
 https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
-#EXTINF:-1 tvg-id="1348" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/foodnetwork.png",Food Network
-https://api.zappr.stream/foodnetwork.mpd
 #EXTINF:-1 tvg-id="1489" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/rtl.png",RTL 102.5
 https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist.m3u8
-#EXTINF:-1 tvg-id="124" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/discovery.png",Discovery
-https://api.zappr.stream/discovery.mpd
 #EXTINF:-1 tvg-id="191" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/giallo.png",Giallo
-https://api.zappr.stream/giallo.mpd
-#EXTINF:-1 tvg-id="225" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/k2.png",K2
-https://api.zappr.stream/k2.mpd
-#EXTINF:-1 tvg-id="189" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/frisbee",Frisbee
-https://api.zappr.stream/frisbee.mpd
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S19146312/master.m3u8
 #EXTINF:-1 tvg-id="412" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/super.png",Super!
 https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="393" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/skytg24.png",Sky TG24
-https://tvheadend-veneto1.zappr.stream/stream/channel/f12c0bdcdf421b230ce4e208880c05d8?profile=webtv-h264-aac-matroska&.mkv
 #EXTINF:-1 tvg-id="137" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/dmax.png",DMAX
-https://api.zappr.stream/dmax.mpd
+https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S13746312/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/casaitalia53.png",Casa Italia 53
-https://canaleitalia.streamcloud.it/embed/live/e701400d-2c46-4cec-8deb-bb6f7b8a7401
-#EXTINF:-1 tvg-id="1646" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/hgtv.png",HGTV - Home & Garden
-https://api.zappr.stream/hgtv.mpd
-#EXTINF:-1 tvg-id="1384" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/discoveryturbo.png",Discovery Turbo
-https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(motortrendhd)/manifest.mpd
+https://liveac915ha.streamcloud.it/channel09/playlist.m3u8
 #EXTINF:-1 tvg-id="1387" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/sportitalia.png",Sportitalia
-https://edge-004.streamup.eu/sportitalia/sihd_abr2/playlist.m3u8
+https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8
 #EXTINF:-1 tvg-id="1284191387" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/il61.png",il61
 https://5a1178b42cc03.streamlock.net/travel/travel/playlist.m3u8
 #EXTINF:-1 tvg-id="464" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/donnatv",Donna TV
@@ -58,21 +42,21 @@ https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/p
 #EXTINF:-1 tvg-id="136" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/radioitalia.png",Radio Italia TV
 https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8
 #EXTINF:-1 tvg-id="80" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/canaleitalia",Canale Italia
-https://canaleitalia.streamcloud.it/embed/live/28591152-e3c0-49b0-94a8-0d3e18125ca8
+https://liveac915ha.streamcloud.it/channel11/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia121",Italia 121
-https://tvheadend-veneto1.zappr.stream/stream/channel/cf4fdc671d03be669278b0e95423c168?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel01/playlist.m3u8
 #EXTINF:-1 tvg-id="canale122" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/canale122",Canale 122
 https://router.xdevel.com/video0s975363-69/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italiachannel",Italia Channel
 https://tvheadend-veneto1.zappr.stream/stream/channel/3bcd74022a27fb47aecb4296b36b6e3a?profile=webtv-h264-aac-matroska&.mkv
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/arteitalia124",Arte Italia 124
-https://tvheadend-veneto1.zappr.stream/stream/channel/87ca4bf0b97a37d7a9810938203ef1c5?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel02/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/arteitalia125",Arte Italia 125
-https://tvheadend-veneto1.zappr.stream/stream/channel/a250b649a11e4f356f0efa92fb4e8f67?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel03/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia126",Italia 126
-https://tvheadend-veneto1.zappr.stream/stream/channel/b30679e896867f490f082fa5b51039ae?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel04/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia127",Italia 127
-https://tvheadend-veneto1.zappr.stream/stream/channel/2c0d3a78b43c84c01cad26439a3a00a9?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel05/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/goldtvitalia",Gold TV Italia
 https://tvheadend-veneto1.zappr.stream/stream/channel/c484b0a7cb02bc85fba45056cdf19702?profile=webtv-h264-aac-matroska&.mkv
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/la4italia",La4 Italia
@@ -86,9 +70,9 @@ https://stream10.xdevel.com/video26s975955-2650/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/artein.png",ArteIN
 https://5a1178b42cc03.streamlock.net/chiossone/chiossone/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia134",Italia 134
-https://tvheadend-veneto1.zappr.stream/stream/channel/3dccc0a8720fa59273b149671f6014d1?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel06/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia135",Italia 135
-https://tvheadend-veneto1.zappr.stream/stream/channel/edf5d8fbe7d989099b9dc59de6ca3b39?profile=webtv-h264-aac-matroska&.mkv
+https://liveac915ha.streamcloud.it/channel07/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/italia136",Italia 136
 https://liveac915ha.streamcloud.it/channel08/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/canale137",Canale 137
@@ -106,7 +90,7 @@ https://600f07e114306.streamlock.net/PadrePioTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/fascinotv147",Fascino TV 147
 https://64b16f23efbee.streamlock.net/canale147/canale147/playlist.m3u8
 #EXTINF:-1 tvg-id="8293" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/equtv",EQUtv
-https://api.zappr.stream/equtv.m3u8
+https://livestream-epiqa.akamaized.net/hls/live/2039453/EQUTV/master.m3u8
 #EXTINF:-1 tvg-id="fascinotv" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/fascinotv",Fascino TV 157
 https://64b16f23efbee.streamlock.net/canale157/canale157/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://raw.githubusercontent.com/freetv-ita/tv-logos/main/logos/kisskiss.png",Kiss Kiss TV
