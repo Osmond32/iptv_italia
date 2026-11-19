@@ -38,24 +38,21 @@
             "lcn": 8,
             "logo": "tv8.svg",
             "name": "TV8",
-            "type": "hls",
-            "url": "zappr://sky/7",
+            "hd": true,
+            "type": "dash",
+            "url": "https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09318/stb-dash-fhd-avc/SV09318.mpd?clearkeyPlayer.audioLanguage=it",
+            "license": "clearkey",
+            "licensedetails": {
+                "3bf1cd65e85c4f6ab2f2ee9ac8403b9b": "9142f7e62d011a8793e9b15ed36d7b7f",
+                "f867332c642e3d7497970d55f0334c3b": "6111dda68d5eb9e29ef5fab147e31149"
+            },
             "epg": {
                 "source": "blue",
                 "id": "266"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09318/stb-dash-fhd-avc/SV09318.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "3bf1cd65e85c4f6ab2f2ee9ac8403b9b": "9142f7e62d011a8793e9b15ed36d7b7f",
-                    "f867332c642e3d7497970d55f0334c3b": "6111dda68d5eb9e29ef5fab147e31149"
-                }
-            },
             "fallback": {
-                "type": "direct",
-                "url": "https://tvheadend-veneto1.zappr.stream/stream/channel/f2771f9ea41e4e41b981c9ee9d05deb4?profile=webtv-h264-aac-matroska&.mkv"
+                "type": "hls",
+                "url": "zappr://sky/7"
             }
         },
         {
@@ -63,48 +60,42 @@
             "logo": "nove.svg",
             "name": "NOVE",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/nove",
+            "type": "dash",
+            "url": "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09472/stb-dash-fhd-avc/SV09472.mpd",
+            "license": "clearkey",
+            "licensedetails": "e0e63271f18f3a8b84b0a5d5bbf4c685:40fe6c26be09e5678fb729a9ab69b336",
             "epg": {
                 "source": "blue",
                 "id": "118"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/nove.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "010043c37b66261b7b08a4420e871324": "abe412fe39ba5eff6ff576a6cdd8b845",
-                    "010152ad7ba3403fe31de4ef1b9a098b": "e07059a95232b08e0c4f60268b83cd70",
-                    "0102079f94a152ab42228d541d895a12": "103ed73228117befc316f36113d3225e",
-                    "01038123c12420f84a578c8b819921f7": "30510416f237d108581b410687f340a2",
-                    "0104f7876c67c31f8815d9bcb3e5049c": "9f90448ea253711e4204834a60e4f80e",
-                    "01051f2b5db19b13fe7402b4d1e53fb6": "6292d73a6cb94d5de50de2f0668825ae"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "nove"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/nove"
             }
         },
         {
             "lcn": 26,
             "logo": "cielo.svg",
             "name": "Cielo",
-            "type": "hls",
-            "url": "zappr://sky/2",
+            "hd": true,
+            "type": "dash",
+            "url": "https://wp9-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09711/stb-dash-fhd-avc/SV09711.mpd?clearkeyPlayer.audioLanguage=it",
+            "license": "clearkey",
+            "licensedetails": {
+                "ceb42bc780dd48a986b2b286db9fdda3": "385693e7df7b07b6936f28e15e480b61",
+                "c77178eaf229361b82bff5390490167f": "7b30de467d675e615ff88bc9fb1f47d8"
+            },
             "epg": {
                 "source": "blue",
                 "id": "96"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://wp9-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09711/stb-dash-fhd-avc/SV09711.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "ceb42bc780dd48a986b2b286db9fdda3": "385693e7df7b07b6936f28e15e480b61",
-                    "c77178eaf229361b82bff5390490167f": "7b30de467d675e615ff88bc9fb1f47d8"
-                }
-            },
             "fallback": {
-                "type": "direct",
-                "url": "https://tvheadend-veneto1.zappr.stream/stream/channel/e0a6c5fad3e752350cc5f2f3adc7a31d?profile=webtv-h264-aac-matroska&.mkv"
+                "type": "hls",
+                "url": "zappr://sky/2"
             }
         },
         {
@@ -140,24 +131,24 @@
             "logo": "realtime.svg",
             "name": "Real Time",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/realtime",
+            "type": "dash",
+            "url": "https://wp3-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09319/stb-dash-fhd-avc/SV09319.mpd",
+            "license": "clearkey",
+            "licensedetails": {
+                "75453fa7322f4b8b81b285529b726e63": "ca79bd265be6ac7315555aa1bbea6afe",
+                "60eb8ddba7113915914b865662fecbdb": "8aca6eddd0a280f39ddc75372be2afd9"
+            },
             "epg": {
                 "source": "blue",
                 "id": "346"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/realtime.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "0100f7e1e92039dcbf28d85af51e1fa3": "a70ae41bc0cf1adfd58563e62d1bfb8f",
-                    "0101b31884be65933dbb3a94b326d108": "4c2e9223f3e15cc3484ff1b88dfbcfff",
-                    "010215557c898b730a16405fc6a7d594": "0e1e9183255b1db525a6569f94631036",
-                    "0103a18e48bc4e0899fd9850447c7ee4": "3c939c0a22d9319368288abead3dd78d",
-                    "01047897bfba70c27d98af57f449ed0a": "a2c497c945cf6b55b59f61611cdce37f",
-                    "01052f86b83705659de18a9e97d9ce83": "518ecdea2822b11012f1e1226549ccd2"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "realtime"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/realtime"
             }
         },
         {
@@ -167,8 +158,8 @@
             "type": "hls",
             "url": "https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8",
             "epg": {
-                "source": "tivu",
-                "id": "130"
+                "source": "superguidatv",
+                "id": "242"
             }
         },
         {
@@ -176,24 +167,21 @@
             "logo": "foodnetwork.svg",
             "name": "Food Network",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/foodnetwork",
+            "type": "dash",
+            "url": "https://wp7-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09716/stb-dash-fhd-avc/SV09716.mpd",
+            "license": "clearkey",
+            "licensedetails": "e43d248c30253fcfa685f39f5ef55d46:04a6997c575b4da1bac97d5aaa8b3c77",
             "epg": {
                 "source": "blue",
                 "id": "1348"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/foodnetwork.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "0100da20381b6e3a3dac1914b5769a54": "7bc7175607cfc6814fd67bf50b8aeecb",
-                    "0101e711dfa15b53172186c0491263bc": "2fd82ba1b649ba58948031ed5ec4ce5c",
-                    "0102a80a74efd881bb1e2da6ea4b10ad": "53af8be715edfd8d7066d20099ad8113",
-                    "0103aef9136f459efd3cd7466d5fbccf": "7d18d930e3f965270fd933265c26f963",
-                    "0104d2e104e28993051da23b8b87bd3b": "d83c05350be50db2ccd81085857c2a0a",
-                    "0105e391afe4bab7de0d419f21704691": "2d8f0dca7d9a71e15418e4b946a26e9f"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "foodnetwork"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/foodnetwork"
             }
         },
         {
@@ -216,21 +204,8 @@
             "type": "iframe",
             "url": "https://wbd.zappr.stream/discovery",
             "epg": {
-                "source": "blue",
-                "id": "124"
-            },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/discovery.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "0100108b761bb5edac85461e0bb3fb0d": "068b3fba256e1c983bec36ff9172ec2e",
-                    "01019975b8beddb720bca70ee9538e90": "7d21bb89a5274e7de7b39db48a5f574a",
-                    "0102eee1dc2cc69007d518af9ab8b07a": "cff31a511f50a1cafb28de73d9e3cfa7",
-                    "0103091ff82b4bae6532a678838bb10e": "226f93077c7c2ba16e93e5ff803a42c6",
-                    "01049e8567fe557e7a466b8fde310bbe": "6f26488ce78600247d33d689cac4e2af",
-                    "010567972eb8b286eb47fbf7e71cd4a4": "ba5bd00b26360e67268c8cc91994603e"
-                }
+                "source": "tivu",
+                "id": "294"
             }
         },
         {
@@ -238,24 +213,24 @@
             "logo": "giallo.svg",
             "name": "Giallo",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/giallo",
+            "type": "dash",
+            "url": "https://wp6-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09717/stb-dash-fhd-avc/SV09717.mpd",
+            "license": "clearkey",
+            "licensedetails": {
+                "4b1d0a37600d45c993c6adac0347b937": "77c319eae6bc48b9ce3b72925ca03c95",
+                "0e4d0798030535ef8a79befcce66e6da": "76b084ba52e9fac968bdbbf6c0055a97"
+            },
             "epg": {
                 "source": "blue",
                 "id": "191"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/giallo.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "010058ec487d57e3cfab7fdde6015993": "d14148377cfcc9349a9853bcee8e557a",
-                    "0101ea2e0cdd76392e342266346cdf37": "804a8f11c8821dad69464a1a32875e8f",
-                    "0102f0d2a220b14b8c1aa8f4c5eb893d": "c976405c88fe6387bef997947becd5d9",
-                    "01036f6d1a3e452c0bf8d869beee0c33": "47ab0305c97e7f71495ab225f614412e",
-                    "010472ef04f71a5e7f3b8e06db379144": "c5a16861a853806e8e284b2a7f950df2",
-                    "0105c3a2810a70c0b2d00808f37fdb4b": "0e2339fba8afeaed661dcdcaabebd00e"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "giallo"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/giallo"
             }
         },
         {
@@ -263,17 +238,7 @@
             "logo": "k2.svg",
             "name": "K2",
             "hd": true,
-            "type": "dash",
-            "url": "https://api.zappr.stream/k2.mpd",
-            "license": "clearkey",
-            "licensedetails": {
-                "01004587127a0e454158b5e7392283d7": "2db7dd74073a6f2a5d5444bbfbe157f2",
-                "0101c9838be12fc94f2e2bb4f6137488": "351e58868f9609833180101e8fdcb4bb",
-                "0102e7882e14ba5223411d61580a2e70": "48141c60c33b393b1cb894afbe296496",
-                "0103936b48b232229e90e0fe748a5127": "40fede50a7c079885cc1f5aeb0611938",
-                "0104a90d8377c8397a16db6aea00255d": "0182a7edbf2671485557922934cce375",
-                "010572e14f306c6bc9321cd6231457b8": "45cae75a5d4073406ee2f524f837c6d4"
-            },
+            "disabled": "not-working",
             "epg": {
                 "source": "blue",
                 "id": "225"
@@ -284,17 +249,7 @@
             "logo": "frisbee",
             "name": "Frisbee",
             "hd": true,
-            "type": "dash",
-            "url": "https://api.zappr.stream/frisbee.mpd",
-            "license": "clearkey",
-            "licensedetails": {
-                "010036356507e020b45b2603e2814373": "51029ecaaff8ef429fd8c41cc672cec0",
-                "010167cff5cc52576f396d1ec8827cfa": "1a39558797b040f528032ecca74d6b3f",
-                "01020b636a6a1e0b812eef00f28e3538": "26bba1b5e42cb88b793241d2d7119fb5",
-                "0103d507c94e1bf4d556011010deba71": "12a125c9a43b489a0adb3b937f618057",
-                "01045825dc15605c4de3845c3059fbb4": "f87037afaefca37df7c2d92de899b9ee",
-                "0105dbe971f59408ff7f3372ad87fd9e": "3ef2b2e5958025ee4c2c0b678d982b09"
-            },
+            "disabled": "not-working",
             "epg": {
                 "source": "blue",
                 "id": "189"
@@ -307,8 +262,8 @@
             "type": "hls",
             "url": "https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist_dvr.m3u8",
             "epg": {
-                "source": "blue",
-                "id": "412"
+                "source": "sky",
+                "id": "6460"
             }
         },
         {
@@ -331,24 +286,24 @@
             "logo": "dmax.svg",
             "name": "DMAX",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/dmax",
+            "type": "dash",
+            "url": "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09713/stb-dash-fhd-avc/SV09713.mpd",
+            "license": "clearkey",
+            "licensedetails": {
+                "3b465d3a53b34fac81e251630e9ad884": "adc4f9d5df8902fd02bb5faab013e441",
+                "8ba07052b5753f2d89b28cf0fc80b3be": "49cb3531f6e693d759eb28c4e5524ca5"
+            },
             "epg": {
                 "source": "blue",
                 "id": "137"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/dmax.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "01003b85994dc3274165ac2d2bc1c0b0": "e35f031bcaa1714ac57a022fb26f135f",
-                    "0101998a4079efbebf260c192deaea9a": "6d9db354981743fc743fc02c5f98f699",
-                    "010285f1a98cb0f9c2690d6834b0cd7a": "a7afa9c822191295a655f82148b9b4bb",
-                    "01031ef976fa45e0b19b6b6b5919b1cb": "f568eda83faab3f269d78736e2e69be9",
-                    "01042986e9051678a4b6a4905ebbbefb": "e60111047d62ab27037a26c982242596",
-                    "0105d330b73558c1a7ddc4aedc7e8f95": "ff38f28e60e39562f4be651f940b0596"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "dmax"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/dmax"
             }
         },
         {
@@ -368,24 +323,24 @@
             "logo": "hgtv.svg",
             "name": "HGTV - Home & Garden",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/hgtv",
+            "type": "dash",
+            "url": "https://wp3-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09718/stb-dash-fhd-avc/SV09718.mpd",
+            "license": "clearkey",
+            "licensedetails": {
+                "43c2773288314525ad6841356e9a5a21": "3b771dcd654e7b9f3bb62a7e24f6b733",
+                "79f9fbec515b34d084bf6052052450bb": "bdd07074aa17ab44aad8ae57f9e5d1dc"
+            },
             "epg": {
                 "source": "blue",
                 "id": "1646"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://api.zappr.stream/hgtv.mpd",
-                "license": "clearkey",
-                "licensedetails": {
-                    "0100a41cbf2b765bd32b545cba44bc8e": "21e9b8bd5db5a65a6b2d4160bae8ffcc",
-                    "01010cfea6b9fc12904c079e1d7da0ce": "fe45ce9597675cba8852c46aff3c0327",
-                    "01022b5987a8bcf1143b64d2075601ae": "046db9d7ac1770e194750045c078677f",
-                    "01033332424f79ad78e4a59b00238b48": "4ca00e1ab389054d6da9f006a8bf8b26",
-                    "01048cf20743e4291477f56b575c7ac7": "a1fa0f11e10a9a2827c86b3b669f10b8",
-                    "01054ffac86eb0d90d095e271f95be6c": "bb5bf8302ca0c8c9aa8cf38eedc2284a"
-                }
+            "manualRestart": {
+                "source": "wbd",
+                "id": "hgtv"
+            },
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/hgtv"
             }
         },
         {
@@ -393,17 +348,20 @@
             "logo": "discoveryturbo.svg",
             "name": "Discovery Turbo",
             "hd": true,
-            "type": "iframe",
-            "url": "https://wbd.zappr.stream/turbo",
+            "type": "dash",
+            "url": "https://wp7-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09723/stb-dash-fhd-avc/SV09723.mpd",
+            "license": "clearkey",
+            "licensedetails": {
+                "36460e92425142c6a6475bf26f64d5a6": "75de59e293344edd37ae6c751b4510e7",
+                "8ae33e0dae5f3acc829fe836c00f742c": "012f880eac652b563637b4c96989fd84"
+            },
             "epg": {
                 "source": "blue",
                 "id": "1384"
             },
-            "geoblock": {
-                "type": "dash",
-                "url": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(motortrendhd)/manifest.mpd",
-                "license": "clearkey",
-                "licensedetails": "b1f533e2ee35459e9be2d0ef1e2b61ab:749bd263e98796fbaf739088862de387"
+            "fallback": {
+                "type": "iframe",
+                "url": "https://wbd.zappr.stream/turbo"
             }
         },
         {
@@ -412,10 +370,10 @@
             "name": "Sportitalia",
             "hd": true,
             "type": "hls",
-            "url": "https://distribution.sportitalialive.it/sportitalia/sihd_abr2/playlist.m3u8",
+            "url": "https://distribution.sportitalialive.it/sportitalia/sihd_abr/playlist.m3u8",
             "geoblock": {
                 "type": "hls",
-                "url": "https://edge-004.streamup.eu/sportitalia/sihd_abr2/playlist.m3u8"
+                "url": "https://edge-004.streamup.eu/sportitalia/sihd_abr/playlist.m3u8"
             },
             "epg": {
                 "source": "blue",
@@ -476,7 +434,7 @@
             "logo": "donnatv",
             "name": "Donna TV",
             "type": "hls",
-            "url": "https://streaming.softwarecreation.it/DonnaTv/DonnaTv/playlist.m3u8",
+            "url": "https://5f11919dca3bd.streamlock.net/donnatv/_definst_/donnatv/playlist.m3u8",
             "epg": {
                 "source": "superguidatv",
                 "id": "464"
@@ -488,7 +446,11 @@
             "name": "Il Sole 24 Ore TV",
             "hd": true,
             "type": "hls",
-            "url": "https://760869f771b04ca8a1e4daa89dd6da3e.msvdn.net/live/S88650405/33lZG4owunfW/playlist.m3u8"
+            "url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8",
+            "fallback": {
+                "type": "hls",
+                "url": "https://760869f771b04ca8a1e4daa89dd6da3e.msvdn.net/live/S88650405/33lZG4owunfW/playlist.m3u8"
+            }
         },
         {
             "lcn": 64,
@@ -543,7 +505,7 @@
             "logo": "almatv.svg",
             "name": "Alma TV",
             "type": "hls",
-            "url": "https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8",
+            "url": "https://5f11919dca3bd.streamlock.net/almatv/_definst_/almatv/playlist.m3u8",
             "epg": {
                 "source": "blue",
                 "id": "16"
@@ -1149,7 +1111,7 @@
             "logo": "odeon24",
             "name": "Odeon 24",
             "type": "hls",
-            "url": "https://streaming.softwarecreation.it/Odeon/Odeon/playlist.m3u8"
+            "url": "https://5f11919dca3bd.streamlock.net/odeonjump/_definst_/odeonjump/playlist.m3u8"
         },
         {
             "lcn": 165,
@@ -1246,37 +1208,43 @@
             },
             {
                 "sublcn": 4,
-                "logo": "teletricolore",
-                "name": "TeleTricolore",
-                "type": "hls",
-                "url": "https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8"
-            },
-            {
-                "sublcn": 5,
-                "logo": "babayagatv",
-                "name": "Babayaga TV",
-                "type": "hls",
-                "url": "https://stream1.xdevel.com/video0s975770-326/stream/playlist.m3u8"
-            },
-            {
-                "sublcn": 6,
                 "logo": "prolocotv",
                 "name": "ProLoco TV",
                 "type": "hls",
-                "url": "https://streamer2.premio.link/mosaic-221-whopst/index.m3u8"
+                "url": "https://stream10.xdevel.com/video0s978704-2978/stream/playlist.m3u8"
+            },
+            {
+                "sublcn": 5,
+                "logo": "itchannel",
+                "name": "IT Channel Cinema",
+                "type": "hls",
+                "url": "https://stream10.xdevel.com/video1s978704-2979/stream/playlist.m3u8"
+            },
+            {
+                "sublcn": 6,
+                "logo": "floridiatv",
+                "name": "Floridia TV",
+                "type": "dash",
+                "url": "https://stream1.wired-shop.com/dash/floridiatv/index.mpd"
             },
             {
                 "sublcn": 7,
-                "logo": "itchannel",
-                "name": "IT Channel",
+                "logo": "telestella",
+                "name": "Telestella",
                 "type": "hls",
-                "url": "https://streamer2.premio.link/itchannel/index.m3u8"
+                "url": "https://5db313b643fd8.streamlock.net/telestella/telestella/playlist.m3u8"
             },
             {
                 "sublcn": 8,
-                "logo": "umtv",
-                "name": "UMTV",
-                "subtitle": "Urban Music Television",
+                "logo": "valpadanatv",
+                "name": "Valpadana TV",
+                "type": "hls",
+                "url": "https://5db313b643fd8.streamlock.net/valpadanatv/valpadanatv/playlist.m3u8"
+            },
+            {
+                "sublcn": 9,
+                "logo": "profi24tv",
+                "name": "Profi 24 TV",
                 "type": "hls",
                 "url": "https://stream10.xdevel.com/video3s978704-3075/stream/playlist.m3u8"
             }]
@@ -1309,8 +1277,8 @@
                 "sublcn": 3,
                 "logo": "rc88.svg",
                 "name": "RC88",
-                "type": "hls",
-                "url": "https://giatv.bozztv.com/giatv/giatv-centroitalia/centroitalia/playlist.m3u8"
+                "type": "youtube",
+                "url": "UCwlu5NxBG5dTu7qUYzIOPPA"
             },
             {
                 "sublcn": 4,
@@ -1977,8 +1945,9 @@
             "lcn": 245,
             "logo": "paroledivita.svg",
             "name": "Parole di Vita",
+            "hd": true,
             "type": "hls",
-            "url": "https://64b16f23efbee.streamlock.net/paroledivita/paroledivita/playlist.m3u8",
+            "url": "https://stream.paroledivita.org/paroledivita.m3u8",
             "epg": {
                 "source": "blue",
                 "id": "1951"
@@ -1990,7 +1959,7 @@
             "name": "BeJoy.Kids",
             "hd": true,
             "type": "hls",
-            "url": "https://64b16f23efbee.streamlock.net/bejoy/bejoy/playlist.m3u8"
+            "url": "https://stream.paroledivita.org/bejoy.m3u8"
         },
         {
             "lcn": 248,
@@ -2858,7 +2827,7 @@
             "name": "InBlu2000",
             "radio": true,
             "type": "hls",
-            "url": "https://www.radioinblu.it/live-stream/inblu2000-playlist.m3u8"
+            "url": "https://hls.live2.meride.tv/hls/live/2028947/inblu2000/playlist.m3u8"
         },
         {
             "lcn": 733,
